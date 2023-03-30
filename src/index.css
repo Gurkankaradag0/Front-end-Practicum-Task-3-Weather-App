@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full antialiased bg-backdrop text-white m-0 p-0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #root {
+    @apply flex flex-col items-center justify-start
+  }
+
+  .chart-stroke {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.15rem;
+    pointer-events: none;
+  }
+}
